@@ -1,16 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello Tailwind</title>
-    <link rel="stylesheet" href="styles/output.css"/>
+    <link rel="stylesheet" href="styles/output.css" />
 </head>
+
 <body>
-    <div class="container mx-auto">
-        <h1 class="text-4xl text-center mt-10">Hello Tailwind</h1>
-        <p class="text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    <div class="bg-black min-h-screen   ">
+        <div class="fixed inset-0 flex items-center justify-center bg-black z-50 hidden" id="loader">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"
+                class="w-24 h-24">
+                <g>
+                    <path style="transform:scale(0.8);transform-origin:50px 50px" stroke-linecap="round"
+                        d="M24.3 30C11.4 30 5 43.3 5 50s6.4 20 19.3 20c19.3 0 32.1-40 51.4-40 C88.6 30 95 43.3 95 50s-6.4 20-19.3 20C56.4 70 43.6 30 24.3 30z"
+                        stroke-dasharray="42.76482137044271 42.76482137044271" stroke-width="8" stroke="#e90c59"
+                        fill="none">
+                        <animate values="0;256.58892822265625" keyTimes="0;1" dur="1s" repeatCount="indefinite"
+                            attributeName="stroke-dashoffset"></animate>
+                    </path>
+                </g>
+            </svg>
+        </div>
+        
+        <div class="  mx-auto px-24 py-8 text-white bg-black">
+            <div class="flex flex-col lg:flex-row items-center justify-between mx-auto gap-8 text-center  fixed w-full bg-black">
+                <div
+                    class=" p-4 rounded-xl hover:bg-green-700 font-medium w-full border border-gray-900 hover:border-none">
+                    <button id="pizza">Pizza</button>
+                </div>
+                <div
+                    class=" p-4 rounded-xl hover:bg-green-700 font-medium w-full border border-gray-900 hover:border-none">
+                    <button id="salad">Salad</button>
+                </div>
+                <div
+                    class=" p-4 rounded-xl hover:bg-green-700 font-medium w-full border border-gray-900 hover:border-none">
+                    <button id="beef">Beef</button>
+                </div>
+                <div
+                    class=" p-4 rounded-xl hover:bg-green-700 font-medium w-full border border-gray-900 hover:border-none">
+                    <button id="pasta">Pasta</button>
+                </div>
+
+            </div>
+
+            <div id="render-contanier" class="flex flex-row flex-wrap gap-8 justify-center  border-gray-900 w-full rounded-xl p-4 mx-auto pt-24">
+
+
+            </div>
+        </div>
     </div>
 </body>
 <script src="scripts/index.js"></script>
+
 </html>
