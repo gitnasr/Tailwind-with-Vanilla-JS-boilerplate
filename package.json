@@ -1,0 +1,14 @@
+{
+  "name": "tailwind-with-vanilla-js-boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "tailwind": "tailwindcss -i ./src/styles/main.css -o ./src/styles/output.css --watch"
+  },
+  "keywords": [],
+  "author": "gitnasr",
+  "license": "ISC",
+  "description": "Boilerplate for Tailwind CSS with Vanilla JS for Fast Development",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
